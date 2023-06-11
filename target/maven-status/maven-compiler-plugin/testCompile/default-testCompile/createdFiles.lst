@@ -1,0 +1,5 @@
+tests/PrintOrSendEmailTest.class
+tests/LoginTest.class
+baseTest/FundamentalUseForTests$1.class
+baseTest/FundamentalUseForTests.class
+tests/SelectProjectTest.class

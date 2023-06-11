@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 123.026 sec <<< FAILURE!
+sendNewTemplate(tests.PrintOrSendEmailTest)  Time elapsed: 42.829 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at pages.FundamentalUse.waitForElementToBeClickable(FundamentalUse.java:40)
+	at pages.FundamentalUse.click(FundamentalUse.java:28)
+	at pages.MemberPreviewPage.goToNeededTabOnMemberPage(MemberPreviewPage.java:24)
+	at tests.PrintOrSendEmailTest.sendNewTemplate(PrintOrSendEmailTest.java:28)
+

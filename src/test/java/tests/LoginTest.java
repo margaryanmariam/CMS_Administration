@@ -1,8 +1,6 @@
 package tests;
 
 import baseTest.FundamentalUseForTests;
-import config.TestSetup;
-import driver.DriverFactory;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -12,22 +10,29 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-import static org.testng.AssertJUnit.assertEquals;
+import static util.TestDataReader.getTestData;
+
 
 public class LoginTest extends FundamentalUseForTests {
     LoginPage loginPage;
     SoftAssert softAssert = new SoftAssert();
 
-    @Test(dataProvider ="getData")
-    public  void loginValidation(HashMap<String, String> userdata){
-         loginPage = new LoginPage(TestSetup.setupDriver());
-         boolean loginResult = loginPage.performLogin(userdata.get("username"), userdata.get("password"));
-         //Assert.assertTrue(loginResult);
+    @Test
+    public  void loginWithValidData(){
+         loginPage = new LoginPage(driver);
+         boolean loginResult = loginPage.performLogin(getTestData("validUsername"),getTestData("validPassword"));
          softAssert.assertTrue(loginResult);
          softAssert.assertAll();
     }
 
-    @DataProvider
+    @Test
+    public  void loginWithInValidData(){
+        loginPage = new LoginPage(driver);
+        boolean loginResult = loginPage.performLogin(getTestData("invalidUsername"),getTestData("invalidPassword"));
+        softAssert.assertFalse(loginResult);
+        softAssert.assertAll();
+    }
+
     public Object[][] getData() throws IOException {
 
         List<HashMap<String, String>> data = getJsonDataToMap(System.getProperty("user.dir") + "//src//test//resources//userData.json");

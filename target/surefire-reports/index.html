@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-tests_PrintOrSendEmailTest" class="navigator-link">
-              <span class="suite-name border-failed">tests.PrintOrSendEmailTest</span>
+            <a href="#" panel-name="suite-tests_LoginTest" class="navigator-link">
+              <span class="suite-name border-passed">tests.LoginTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-tests_PrintOrSendEmailTest" class="navigator-link ">
+                  <a href="#" panel-name="test-xml-tests_LoginTest" class="navigator-link ">
                     <span>[unset file name]</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-tests_PrintOrSendEmailTest" class="navigator-link ">
+                  <a href="#" panel-name="testlist-tests_LoginTest" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-tests_PrintOrSendEmailTest" class="navigator-link ">
+                  <a href="#" panel-name="group-tests_LoginTest" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-tests_PrintOrSendEmailTest" class="navigator-link ">
+                  <a href="#" panel-name="times-tests_LoginTest" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-tests_PrintOrSendEmailTest" class="navigator-link ">
+                  <a href="#" panel-name="reporter-tests_LoginTest" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-tests_PrintOrSendEmailTest" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-tests_LoginTest" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-tests_PrintOrSendEmailTest" class="navigator-link ">
+                  <a href="#" panel-name="chronological-tests_LoginTest" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-tests_PrintOrSendEmailTest" class="hide-methods failed suite-tests_PrintOrSendEmailTest"> (hide)</a> <!-- hide-methods failed suite-tests_PrintOrSendEmailTest -->
-                      <a href="#" panel-name="suite-tests_PrintOrSendEmailTest" class="show-methods failed suite-tests_PrintOrSendEmailTest"> (show)</a> <!-- show-methods failed suite-tests_PrintOrSendEmailTest -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-tests_LoginTest" class="hide-methods passed suite-tests_LoginTest"> (hide)</a> <!-- hide-methods passed suite-tests_LoginTest -->
+                      <a href="#" panel-name="suite-tests_LoginTest" class="show-methods passed suite-tests_LoginTest"> (show)</a> <!-- show-methods passed suite-tests_LoginTest -->
                     </span>
-                    <div class="method-list-content failed suite-tests_PrintOrSendEmailTest">
+                    <div class="method-list-content passed suite-tests_LoginTest">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-tests_PrintOrSendEmailTest" title="tests.PrintOrSendEmailTest" class="method navigator-link" hash-for-method="sendNewTemplate">sendNewTemplate</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-tests_LoginTest" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithInValidData">loginWithInValidData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-tests_PrintOrSendEmailTest -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-tests_LoginTest" title="tests.LoginTest" class="method navigator-link" hash-for-method="loginWithValidData">loginWithValidData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-tests_LoginTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,70 +122,50 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-tests_PrintOrSendEmailTest" class="panel tests_PrintOrSendEmailTest">
-          <div class="suite-tests_PrintOrSendEmailTest-class-failed">
+        <div panel-name="suite-tests_LoginTest" class="panel tests_LoginTest">
+          <div class="suite-tests_LoginTest-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.PrintOrSendEmailTest</span>
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="sendNewTemplate">
-                  </a> <!-- sendNewTemplate -->
-                  <span class="method-name">sendNewTemplate</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li class=&quot;kt-menu__item kt-menu__item--submenu kt-menu__item--rel ng-scope&quot; ng-if=&quot;permissionMap.manage || permissionMap.manage_settings&quot; ng-show=&quot;(userInfo.user &amp;amp;&amp;amp; !userInfo.user.super_admin)&quot; ng-class=&quot;{&apos;kt-menu__item--here&apos;: [&apos;members&apos;, &apos;prospects&apos;, &apos;user-management&apos;, &apos;checkIn-manage&apos;, &apos;appointments&apos;, &apos;bookings&apos;, &apos;membership&apos;, &apos;finance&apos;, &apos;check-round&apos;,
-                                                                &apos;team&apos;, &apos;manage-analytics&apos;, &apos;manage-settings&apos;, &apos;locations&apos;, &apos;notifications&apos;,&apos;booking-account-main&apos;, &apos;app-content-management&apos;].includes($root.page)}&quot; data-ktmenu-submenu-toggle=&quot;click&quot; aria-haspopup=&quot;true&quot; style=&quot;&quot;&gt;...&lt;/li&gt; is not clickable at point (111, 100). Other element would receive the click: &lt;div id=&quot;projectView&quot; class=&quot;cover&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.19.0-43-generic&apos;, java.version: &apos;11.0.19&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bee12016a97769cead925335d2cfb5c9, clickElement {id=4095509d-8835-42e4-bc5f-63437427e8dd}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.165, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /tmp/.com.google.Chrome.eUqwBt}, goog:chromeOptions: {debuggerAddress: localhost:39703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39703/devtoo..., se:cdpVersion: 112.0.5615.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (bee12016a97769cead925335d2cfb5c9)] -&gt; css selector: [class=&apos;kt-menu__nav &apos;]&gt;li:nth-child(1)]
-Session ID: bee12016a97769cead925335d2cfb5c9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy22.click(Unknown Source)
-	at pages.FundamentalUse.click(FundamentalUse.java:30)
-	at pages.NavigationMenuPage.navigateToMemberOverview(NavigationMenuPage.java:46)
-	at tests.PrintOrSendEmailTest.sendNewTemplate(PrintOrSendEmailTest.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 44 stack frames
-</div> <!-- stack-trace -->
+                  <a name="loginWithInValidData">
+                  </a> <!-- loginWithInValidData -->
+                  <span class="method-name">loginWithInValidData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginWithValidData">
+                  </a> <!-- loginWithValidData -->
+                  <span class="method-name">loginWithValidData</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-tests_PrintOrSendEmailTest-class-failed -->
-        </div> <!-- panel tests_PrintOrSendEmailTest -->
-        <div panel-name="test-xml-tests_PrintOrSendEmailTest" class="panel">
+          </div> <!-- suite-tests_LoginTest-class-passed -->
+        </div> <!-- panel tests_LoginTest -->
+        <div panel-name="test-xml-tests_LoginTest" class="panel">
           <div class="main-panel-header rounded-window-top">
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;tests.PrintOrSendEmailTest&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;tests.LoginTest&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;tests.PrintOrSendEmailTest&quot;/&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Command line test --&gt;
-&lt;/suite&gt; &lt;!-- tests.PrintOrSendEmailTest --&gt;
+&lt;/suite&gt; &lt;!-- tests.LoginTest --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-tests_PrintOrSendEmailTest" class="panel">
+        <div panel-name="testlist-tests_LoginTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for tests.PrintOrSendEmailTest</span>
+            <span class="header-content">Tests for tests.LoginTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
@@ -190,76 +175,90 @@ Session ID: bee12016a97769cead925335d2cfb5c9
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-tests_PrintOrSendEmailTest" class="panel">
+        <div panel-name="group-tests_LoginTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for tests.PrintOrSendEmailTest</span>
+            <span class="header-content">Groups for tests.LoginTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-tests_PrintOrSendEmailTest" class="panel">
+        <div panel-name="times-tests_LoginTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for tests.PrintOrSendEmailTest</span>
+            <span class="header-content">Times for tests.LoginTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_tests_PrintOrSendEmailTest');
-function tableData_tests_PrintOrSendEmailTest() {
+suiteTableInitFunctions.push('tableData_tests_LoginTest');
+function tableData_tests_LoginTest() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'sendNewTemplate')
-data.setCell(0, 2, 'tests.PrintOrSendEmailTest')
-data.setCell(0, 3, 11787);
-window.suiteTableData['tests_PrintOrSendEmailTest']= { tableData: data, tableDiv: 'times-div-tests_PrintOrSendEmailTest'}
+data.setCell(0, 1, 'loginWithValidData')
+data.setCell(0, 2, 'tests.LoginTest')
+data.setCell(0, 3, 50719);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginWithInValidData')
+data.setCell(1, 2, 'tests.LoginTest')
+data.setCell(1, 3, 1256);
+window.suiteTableData['tests_LoginTest']= { tableData: data, tableDiv: 'times-div-tests_LoginTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
-              <div id="times-div-tests_PrintOrSendEmailTest">
-              </div> <!-- times-div-tests_PrintOrSendEmailTest -->
+              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <div id="times-div-tests_LoginTest">
+              </div> <!-- times-div-tests_LoginTest -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-tests_PrintOrSendEmailTest" class="panel">
+        <div panel-name="reporter-tests_LoginTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for tests.PrintOrSendEmailTest</span>
+            <span class="header-content">Reporter output for tests.LoginTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-tests_PrintOrSendEmailTest" class="panel">
+        <div panel-name="ignored-methods-tests_LoginTest" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-tests_PrintOrSendEmailTest" class="panel">
+        <div panel-name="chronological-tests_LoginTest" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.PrintOrSendEmailTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">sendNewTemplate</span>
-                <span class="method-start">15495 ms</span>
+                <span class="method-name">loginWithInValidData</span>
+                <span class="method-start">10941 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">27475 ms</span>
+                <span class="method-start">12208 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">12329 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginWithValidData</span>
+                <span class="method-start">25693 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">76414 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

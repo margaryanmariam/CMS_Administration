@@ -8,36 +8,12 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">tests.PrintOrSendEmailTest</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">27,651</td><td></td><td></td></tr>
+<tr><th colspan="8">tests.LoginTest</th></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">76,565</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">tests.PrintOrSendEmailTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.PrintOrSendEmailTest</td><td><a href="#m0">sendNewTemplate</a></td><td rowspan="1">1686504135012</td><td rowspan="1">11787</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">tests.LoginTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.LoginTest</td><td><a href="#m0">loginWithInValidData</a></td><td rowspan="1">1686573408166</td><td rowspan="1">1256</td></tr><tr class="passedeven"><td><a href="#m1">loginWithValidData</a></td><td rowspan="1">1686573422918</td><td rowspan="1">50719</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">tests.PrintOrSendEmailTest#sendNewTemplate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;li class=&quot;kt-menu__item kt-menu__item--submenu kt-menu__item--rel ng-scope&quot; ng-if=&quot;permissionMap.manage || permissionMap.manage_settings&quot; ng-show=&quot;(userInfo.user &amp;amp;&amp;amp; !userInfo.user.super_admin)&quot; ng-class=&quot;{&apos;kt-menu__item--here&apos;: [&apos;members&apos;, &apos;prospects&apos;, &apos;user-management&apos;, &apos;checkIn-manage&apos;, &apos;appointments&apos;, &apos;bookings&apos;, &apos;membership&apos;, &apos;finance&apos;, &apos;check-round&apos;,
-                                                                &apos;team&apos;, &apos;manage-analytics&apos;, &apos;manage-settings&apos;, &apos;locations&apos;, &apos;notifications&apos;,&apos;booking-account-main&apos;, &apos;app-content-management&apos;].includes($root.page)}&quot; data-ktmenu-submenu-toggle=&quot;click&quot; aria-haspopup=&quot;true&quot; style=&quot;&quot;&gt;...&lt;/li&gt; is not clickable at point (111, 100). Other element would receive the click: &lt;div id=&quot;projectView&quot; class=&quot;cover&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=112.0.5615.165)
-Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.19.0-43-generic&apos;, java.version: &apos;11.0.19&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bee12016a97769cead925335d2cfb5c9, clickElement {id=4095509d-8835-42e4-bc5f-63437427e8dd}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.165, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /tmp/.com.google.Chrome.eUqwBt}, goog:chromeOptions: {debuggerAddress: localhost:39703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39703/devtoo..., se:cdpVersion: 112.0.5615.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (bee12016a97769cead925335d2cfb5c9)] -&gt; css selector: [class=&apos;kt-menu__nav &apos;]&gt;li:nth-child(1)]
-Session ID: bee12016a97769cead925335d2cfb5c9
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at com.sun.proxy.$Proxy22.click(Unknown Source)
-	at pages.FundamentalUse.click(FundamentalUse.java:30)
-	at pages.NavigationMenuPage.navigateToMemberOverview(NavigationMenuPage.java:46)
-	at tests.PrintOrSendEmailTest.sendNewTemplate(PrintOrSendEmailTest.java:26)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 44 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Command line test</h2><h3 id="m0">tests.LoginTest#loginWithInValidData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.LoginTest#loginWithValidData</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

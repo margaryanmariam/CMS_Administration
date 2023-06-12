@@ -1,111 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-11T21:21:59 AMT" name="tests.PrintOrSendEmailTest" finished-at="2023-06-11T21:22:27 AMT" duration-ms="27651">
+  <suite started-at="2023-06-12T16:36:37 AMT" name="tests.LoginTest" finished-at="2023-06-12T16:37:53 AMT" duration-ms="76565">
     <groups>
     </groups>
-    <test started-at="2023-06-11T21:21:59 AMT" name="Command line test" finished-at="2023-06-11T21:22:27 AMT" duration-ms="27651">
-      <class name="tests.PrintOrSendEmailTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.PrintOrSendEmailTest@275710fc]" started-at="2023-06-11T21:21:59 AMT" name="setUp" finished-at="2023-06-11T21:22:15 AMT" duration-ms="15493" status="PASS">
+    <test started-at="2023-06-12T16:36:37 AMT" name="Command line test" finished-at="2023-06-12T16:37:53 AMT" duration-ms="76565">
+      <class name="tests.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@589b3632]" started-at="2023-06-12T16:36:37 AMT" name="setUp" finished-at="2023-06-12T16:36:48 AMT" duration-ms="10940" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="sendNewTemplate()[pri:0, instance:tests.PrintOrSendEmailTest@275710fc]" started-at="2023-06-11T21:22:15 AMT" name="sendNewTemplate" finished-at="2023-06-11T21:22:26 AMT" duration-ms="11787" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel ng-scope" ng-if="permissionMap.manage || permissionMap.manage_settings" ng-show="(userInfo.user &amp;&amp; !userInfo.user.super_admin)" ng-class="{'kt-menu__item--here': ['members', 'prospects', 'user-management', 'checkIn-manage', 'appointments', 'bookings', 'membership', 'finance', 'check-round',
-                                                                'team', 'manage-analytics', 'manage-settings', 'locations', 'notifications','booking-account-main', 'app-content-management'].includes($root.page)}" data-ktmenu-submenu-toggle="click" aria-haspopup="true" style="">...</li> is not clickable at point (111, 100). Other element would receive the click: <div id="projectView" class="cover">...</div>
-  (Session info: chrome=112.0.5615.165)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.19.0-43-generic', java.version: '11.0.19'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bee12016a97769cead925335d2cfb5c9, clickElement {id=4095509d-8835-42e4-bc5f-63437427e8dd}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.165, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /tmp/.com.google.Chrome.eUqwBt}, goog:chromeOptions: {debuggerAddress: localhost:39703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39703/devtoo..., se:cdpVersion: 112.0.5615.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (bee12016a97769cead925335d2cfb5c9)] -> css selector: [class='kt-menu__nav ']>li:nth-child(1)]
-Session ID: bee12016a97769cead925335d2cfb5c9]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <li class="kt-menu__item kt-menu__item--submenu kt-menu__item--rel ng-scope" ng-if="permissionMap.manage || permissionMap.manage_settings" ng-show="(userInfo.user &amp;&amp; !userInfo.user.super_admin)" ng-class="{'kt-menu__item--here': ['members', 'prospects', 'user-management', 'checkIn-manage', 'appointments', 'bookings', 'membership', 'finance', 'check-round',
-                                                                'team', 'manage-analytics', 'manage-settings', 'locations', 'notifications','booking-account-main', 'app-content-management'].includes($root.page)}" data-ktmenu-submenu-toggle="click" aria-haspopup="true" style="">...</li> is not clickable at point (111, 100). Other element would receive the click: <div id="projectView" class="cover">...</div>
-  (Session info: chrome=112.0.5615.165)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.19.0-43-generic', java.version: '11.0.19'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bee12016a97769cead925335d2cfb5c9, clickElement {id=4095509d-8835-42e4-bc5f-63437427e8dd}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.165, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /tmp/.com.google.Chrome.eUqwBt}, goog:chromeOptions: {debuggerAddress: localhost:39703}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39703/devtoo..., se:cdpVersion: 112.0.5615.165, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (bee12016a97769cead925335d2cfb5c9)] -> css selector: [class='kt-menu__nav ']>li:nth-child(1)]
-Session ID: bee12016a97769cead925335d2cfb5c9
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-at com.sun.proxy.$Proxy22.click(Unknown Source)
-at pages.FundamentalUse.click(FundamentalUse.java:30)
-at pages.NavigationMenuPage.navigateToMemberOverview(NavigationMenuPage.java:46)
-at tests.PrintOrSendEmailTest.sendNewTemplate(PrintOrSendEmailTest.java:26)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+        <test-method signature="loginWithInValidData()[pri:0, instance:tests.LoginTest@589b3632]" started-at="2023-06-12T16:36:48 AMT" name="loginWithInValidData" finished-at="2023-06-12T16:36:49 AMT" duration-ms="1256" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sendNewTemplate -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.PrintOrSendEmailTest@275710fc]" started-at="2023-06-11T21:22:26 AMT" name="tearDown" finished-at="2023-06-11T21:22:27 AMT" duration-ms="112" status="PASS">
+        </test-method> <!-- loginWithInValidData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@589b3632]" started-at="2023-06-12T16:36:49 AMT" name="tearDown" finished-at="2023-06-12T16:36:49 AMT" duration-ms="119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.PrintOrSendEmailTest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.LoginTest@589b3632]" started-at="2023-06-12T16:36:49 AMT" name="setUp" finished-at="2023-06-12T16:37:02 AMT" duration-ms="13363" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginWithValidData()[pri:0, instance:tests.LoginTest@589b3632]" started-at="2023-06-12T16:37:02 AMT" name="loginWithValidData" finished-at="2023-06-12T16:37:53 AMT" duration-ms="50719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.LoginTest@589b3632]" started-at="2023-06-12T16:37:53 AMT" name="tearDown" finished-at="2023-06-12T16:37:53 AMT" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.LoginTest -->
     </test> <!-- Command line test -->
-  </suite> <!-- tests.PrintOrSendEmailTest -->
+  </suite> <!-- tests.LoginTest -->
 </testng-results>

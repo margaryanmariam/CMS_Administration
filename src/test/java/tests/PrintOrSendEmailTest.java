@@ -20,8 +20,8 @@ public class PrintOrSendEmailTest extends FundamentalUseForTests {
     @Test
     public void sendNewTemplate(){
         loginPage = new LoginPage(driver);
-        selectProjectPage = loginPage.login(getTestData("username"),getTestData("password"));
-        loaderPage = selectProjectPage.selectProject("Qa-sub");
+        selectProjectPage = loginPage.login(getTestData("validUsername"),getTestData("validPassword"));
+        loaderPage = selectProjectPage.selectProject(getTestData("project"));
         navigationMenuPage = loaderPage.openProjectView();
         memberOverviewPage = navigationMenuPage.navigateToMemberOverview();
         printOrSentEmailPage =  memberOverviewPage.goToMembersSendEmailPopup();

@@ -1,10 +1,18 @@
 [
   {
-    "username": "qaAdminSub",
-    "password": "test"
+    "validUsername": "qaAdminSub",
+    "validPassword": "test"
   } ,
   {
-    "username": "qaAdaamin",
-    "password": "test11"
+    "validUsername": "qaAdmin",
+    "validPassword": "test"
+  },
+  {
+    "invalidUsername": "qaAdaamin",
+    "invalidPassword": "test11"
+  },
+  {
+    "invalidUsername": "qaAdminSuuuub",
+    "invalidPassword": "test11"
   }
-]
+  ]

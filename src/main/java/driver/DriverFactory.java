@@ -22,12 +22,10 @@ public class DriverFactory {
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
-                    System.out.println("------------123456543213456---");
                     break;
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver = new ChromeDriver();
-//                    System.setProperty("webdriver.chrome.driver", "/home/beeweb/Desktop/Projects/JavaProjects/CMS_Administration/resources/chromedriver");
                     break;
                 default:
                     throw new IllegalArgumentException("Invalid driver type: " + driverType);

@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import java.io.InputStream;
 import java.util.Properties;
 
+import static util.TestDataReader.getTestData;
+
 public class TestSetup {
     private static String url;
     private static String environment;
@@ -20,7 +22,7 @@ public class TestSetup {
         TestSetup.browserType = browserType;
     }
 
-    private static String getEnvironmentFromMaven() {
+    public static String getEnvironmentFromMaven() {
         String env = System.getProperty("environment");
         if (env != null && !env.isEmpty()) {
             setEnvironment(env);
@@ -45,17 +47,8 @@ public class TestSetup {
     }
 
     private static void setUrlBasedOnEnvironment() {
-        // Load the properties file
-        Properties properties = new Properties();
-        try (InputStream inputStream = TestSetup.class.getResourceAsStream("/config.properties")) {
-            properties.load(inputStream);
-        } catch (Exception e) {
-            e.printStackTrace();
-//
-        }
-
-        // Get the URL based on the environment
-        url = properties.getProperty("url." + environment);
+        // Set url from TestDataReader class
+        url = getTestData("url");
     }
 
     private static void setBrowserType() {
@@ -65,7 +58,6 @@ public class TestSetup {
             properties.load(inputStream);
         } catch (Exception e) {
             e.printStackTrace();
-//
         }
 
         // Get the BrowserType

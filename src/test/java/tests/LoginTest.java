@@ -20,7 +20,7 @@ public class LoginTest extends FundamentalUseForTests {
     @Test
     public  void loginWithValidData(){
          loginPage = new LoginPage(driver);
-         boolean loginResult = loginPage.performLogin(getTestData("validUsername"),getTestData("validPassword"));
+         boolean loginResult = loginPage.performLogin(getTestData("username"),getTestData("userPassword"));
          softAssert.assertTrue(loginResult);
          softAssert.assertAll();
     }

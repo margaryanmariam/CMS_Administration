@@ -66,9 +66,9 @@ public class FundamentalUse  {
     }
 
     public void fluentWaitForElementToBeDisappeared(WebElement element){
-        // Create a fluent wait with a maximum timeout of 40 seconds
+        // Create a fluent wait with a maximum timeout of 60 seconds
         FluentWait<WebDriver> fluentWait = new FluentWait<>(driver)
-                .withTimeout(Duration.ofSeconds(50))
+                .withTimeout(Duration.ofSeconds(60))
                 .pollingEvery(Duration.ofSeconds(10))
                 .ignoring(org.openqa.selenium.NoSuchElementException.class);
         fluentWait.until(ExpectedConditions.invisibilityOf(element));

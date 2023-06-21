@@ -6,7 +6,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 public class ExtentReporterNG {
 
     public static ExtentReports getReportObject(){
-        ExtentSparkReporter reporter = new ExtentSparkReporter("/home/beeweb/Desktop/Projects/JavaProjects/CMS_Administration/reportsHtml/report.html");
+        ExtentSparkReporter reporter = new ExtentSparkReporter(System.getProperty("user.dir")+"//reportsHtml//report.html");
         reporter.config().setReportName("Test Report");
         reporter.config().setDocumentTitle("ReportDoc");
         ExtentReports extentReporter = new ExtentReports();

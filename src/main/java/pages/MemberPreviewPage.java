@@ -21,7 +21,8 @@ public class MemberPreviewPage extends FundamentalUse {
 
     public void goToNeededTabOnMemberPage(String tabName) {
         WebElement neededTabElement = memberPageTabs.stream().filter(t -> t.findElement(By.cssSelector("a")).getText().equalsIgnoreCase(tabName)).findFirst().orElse(null);
-        waitForVisibilityOfElement(navLink);
+        waitForVisibilityOfElement(neededTabElement);
+        System.out.println(neededTabElement.getText());
         click(neededTabElement);
     }
 

@@ -10,7 +10,7 @@ public class SelectProjectTest extends FundamentalUseForTests {
     SelectProjectPage selectProjectPage;
 
     @Test
-    public void selectProject() {
+    public void selectProject() throws InterruptedException {
         loginPage = new LoginPage(driver);
         selectProjectPage = loginPage.login("qaAdminSub","test");
        // selectProjectPage = new pages.SelectProjectPage(driver);

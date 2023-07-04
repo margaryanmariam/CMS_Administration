@@ -40,6 +40,10 @@ public class FundamentalUse  {
         wait.until(ExpectedConditions.elementToBeClickable(element));
     }
 
+    public void waitPresenceOfElementLocated(By element){
+        wait.until(ExpectedConditions.presenceOfElementLocated(element));
+    }
+
     public void waitForVisibilityOfElement(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
@@ -68,7 +72,7 @@ public class FundamentalUse  {
     public void fluentWaitForElementToBeDisappeared(WebElement element){
         // Create a fluent wait with a maximum timeout of 60 seconds
         FluentWait<WebDriver> fluentWait = new FluentWait<>(driver)
-                .withTimeout(Duration.ofSeconds(60))
+                .withTimeout(Duration.ofSeconds(90))
                 .pollingEvery(Duration.ofSeconds(10))
                 .ignoring(org.openqa.selenium.NoSuchElementException.class);
         fluentWait.until(ExpectedConditions.invisibilityOf(element));

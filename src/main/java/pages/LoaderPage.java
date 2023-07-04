@@ -13,7 +13,8 @@ public class LoaderPage  extends FundamentalUse {
     public WebElement loader;
 
 
-    public NavigationMenuPage openProjectView(){
+    public NavigationMenuPage openProjectView() throws InterruptedException {
+        Thread.sleep(1500);
         fluentWaitForElementToBeDisappeared(loader);
         return new NavigationMenuPage(driver);
     }

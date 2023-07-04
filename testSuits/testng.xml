@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="util.Listener"/>
     </listeners>
-    <test name="Login Page test">
+    <test name="Test">
         <classes>
             <class name = "tests.LoginTest"/>
             <class name = "tests.PrintOrSendEmailTest"/>

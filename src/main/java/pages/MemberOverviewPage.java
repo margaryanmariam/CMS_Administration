@@ -15,17 +15,18 @@ public class MemberOverviewPage extends FundamentalUse {
     public WebElement previewButton;
 
     @FindBy(css ="i[class*='fa fa-spinner fa-spin pr-0']")
-    public WebElement spinnerINOverviewTabs;
+    public WebElement spinnerInOverviewTabs;
 
 
     public PrintOrSendEmailPage goToMembersSendEmailPopup(){
-        waitInvisibilityOfElement(spinnerINOverviewTabs);
+        waitInvisibilityOfElement(spinnerInOverviewTabs);
         click(emailButton);
         return new PrintOrSendEmailPage(driver);
     }
 
     public MemberPreviewPage goToMemberPreviewPage(){
-        waitInvisibilityOfElement(spinnerINOverviewTabs);
+        waitInvisibilityOfElement(spinnerInOverviewTabs);
+        waitForVisibilityOfElement(previewButton);
         click(previewButton);
         return new MemberPreviewPage(driver);
     }

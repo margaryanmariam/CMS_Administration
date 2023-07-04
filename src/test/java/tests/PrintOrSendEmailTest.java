@@ -1,8 +1,8 @@
 package tests;
 
 import baseTest.FundamentalUseForTests;
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import pages.*;
 
 import static util.TestDataReader.getTestData;
@@ -15,10 +15,11 @@ public class PrintOrSendEmailTest extends FundamentalUseForTests {
     PrintOrSendEmailPage printOrSentEmailPage;
     LoaderPage loaderPage;
     MemberPreviewPage memberPreviewPage;
+    SoftAssert softAssert = new SoftAssert();
 
 
     @Test
-    public void sendNewTemplate(){
+    public void sendNewTemplate() throws InterruptedException {
         loginPage = new LoginPage(driver);
         selectProjectPage = loginPage.login(getTestData("username"),getTestData("userPassword"));
         loaderPage = selectProjectPage.selectProject(getTestData("project"));
@@ -29,7 +30,7 @@ public class PrintOrSendEmailTest extends FundamentalUseForTests {
         memberPreviewPage = memberOverviewPage.goToMemberPreviewPage();
         memberPreviewPage.goToNeededTabOnMemberPage("History");
         String emailSubject = memberPreviewPage.emailSubjectText();
-        Assert.assertEquals(emailSubject,"AutomationTestSubject");
-
+        softAssert.assertEquals(emailSubject,"AutomationTestSubject");
+        softAssert.assertAll();
     }
 }

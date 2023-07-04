@@ -24,7 +24,7 @@ public class PrintOrSendEmailPage extends FundamentalUse {
     public WebElement emailSubject_en;
 
 
-    @FindBy(css ="div[id = 'cke_1_contents']")
+    @FindBy(css ="div[id = 'cke_content_en']")
     public  WebElement ckContentDiv;
     @FindBy(css ="div[id = 'content_en']")
     public  WebElement emailContent;
@@ -42,6 +42,7 @@ public class PrintOrSendEmailPage extends FundamentalUse {
         waitForElementToBeClickable(emailSubject_en);
         emailSubject_en.sendKeys(emailSubject);
         scrollDownToElementAndClick(ckContentDiv);
+        waitForVisibilityOfElement(ckContentDiv);
         actions.keyDown(Keys.CONTROL).sendKeys("a").keyUp(Keys.CONTROL).sendKeys(Keys.DELETE).build().perform();
         actions.sendKeys(emailBody).build().perform();
         click(sendButton);

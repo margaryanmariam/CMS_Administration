@@ -63,6 +63,7 @@ public class FundamentalUse  {
     }
 
     public void scrollDownToElementAndClick(WebElement element) {
+        waitForVisibilityOfElement(element);
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].scrollIntoView(true);", element);
         element.click();

@@ -79,7 +79,8 @@ public class Listener implements ITestListener {
     public String getScreenShot(String testCaseName, WebDriver driver) throws IOException {
         TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
         File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(source,new File(System.getProperty("user.dir")+ "//screenshotReports//"+ testCaseName + ".png"));
-        return System.getProperty("user.dir")+ "//screenshotReports//"+ testCaseName + ".png";
+        FileUtils.copyFile(source,new File(System.getProperty("user.dir")+ "/screenshotReports/"+ testCaseName + ".png"));
+        System.out.println(System.getProperty("user.dir")+ "/screenshotReports/"+ testCaseName + ".png");
+        return System.getProperty("user.dir")+ "/screenshotReports/"+ testCaseName + ".png";
     }
 }

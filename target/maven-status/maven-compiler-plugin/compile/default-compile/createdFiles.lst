@@ -13,4 +13,3 @@ pages/SelectProjectPage.class
 util/TestDataReader.class
 pages/LoginPage.class
 pages/MemberOverviewPage.class
-config/Environment.class
